@@ -1,5 +1,4 @@
-data work.aufgabe;
-keep= Make Model Type;
+data work.aufgabe (keep= Make Model Type);
 set sashelp.cars;
-where type = Sedan;
+where type = "Sedan";
 run;
